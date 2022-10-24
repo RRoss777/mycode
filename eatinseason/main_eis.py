@@ -17,14 +17,15 @@ url ="https://tasty.p.rapidapi.com/recipes/auto-complete"
 
 #dictionary of seasons and corresponding produce available during that season
 #seasonal_ingredients = [{"season": "Spring", "seasonal_produce": [ "apples”, “carrots”, “fennel”]}, {"season": "Summer", "seasonal_produce": ["apples", "blueberries", "melons"]},  {"season": "Fall", "seasonal_produce": ["apples", "beets", "pumpkin"]}, [{"season": "Winter", "seasonal_ produce": ["apples", "beets", "sweet potatoes”]}]
-seasonal_ingredients = [{"Spring": ["apples”, “carrots”, “fennel"]}, {"Summer": ["apples", "blueberries", "melons"]}, {"Fall": ["apples", "beets", "pumpkin"]}, {"Winter": ["apples", "beets", "sweet potatoes”]}]
+seasonal_ingredients = {"Spring": ["apples”, “carrots”, “fennel"]}, {"Summer": ["apples", "blueberries", "melons"]}, {"Fall": ["apples", "beets", "pumpkin"]}, {"Winter": ["apples", "beets", "sweet potatoes"]}
 
-    a = seasonal_ingredients.keys[0][0]
-    b = seasonal_ingredients.keys[1][0]
-    c = seasonal_ingredients.keys[2][0]
-    d = seasonal_ingredients.keys[3][0]
+a = seasonal_ingredients.keys[0][0]
+b = seasonal_ingredients.keys[1][0]
+c = seasonal_ingredients.keys[2][0]
+d = seasonal_ingredients.keys[3][0]
 
-x = print(input(“Eating produce when it is in season not only tastes better but is also nutritionally better for you. Which season are you interested in for trying out new recipes? Enter {a}, {b} {c} or {d} to find out what produce is in season.”))
+print(f'Eating produce when it is in season not only tastes better but is also nutritionally better for you.')
+x= input('Which season are you interested in for trying out new recipes? Enter {a}, {b} {c} or {d} to find out what produce is in season.')
 
 def produce_list():
 
